@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+body
+{
+  --color-primary:#009579;
+  --color-primary-dark:#007f67;
+  --color-secondary:#252c6a;
+  --color-error:#cc3333;
+  --color-success:#009579;
+  --color-secondary:#4bb544;
+  --border-radius:4px;
+  
+  margin:0;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:18px;
+  background:var(--color-primary);
+}
+
+.container
+{
+  width:400px;
+  max-width:400px;
+  background:#ffff;
+  padding:2rem;
+  margin:1rem;
+  border-radius:var(--border-radius);
+  box-shadow:0 0 40px rgba(0,0,0,0.4);
+}
+.container,.form_input,.form_button
+{
+  font:500 1rem "Poppins",sans-seriff;
+}
+.form > *:first-child
+{
+  margin-top:0;
+}
+.form > *:last-child
+{
+  margin-bottom:0;
+}
+.form__message
+{
+  text-align:center;
+  margin:1rem;
+}
+.form__message-error
+{
+  color:var(--color-error)
+}
+.form__message-success
+{
+  color:var(--color-success);
+}
+.form__title
+{
+  text-align:center;
+  margin-bottom:2rem;
+}
+.form__input-group
+{
+  margin-bottom:1rem;
+}
+.form__input
+{
+  display:block;
+  width:100%;
+  background:#eeeeee;
+  border-radius:var(--border-radius);
+  border:1px solid #dddddd;
+  padding:0.75rem;
+  box-sizing:border-box;
+  outline:none;
+  transition: background 0.2s,border-color 0.2s;
+}
+.form__input:focus
+{
+  border-color:var(--color-primary);
+  background:#ffffff;
+}
+.form__input--error
+{
+  
+  border-color:var(--color-error);
+  color:var(--color-error);
+}
+.form__input-error-message
+{
+  margin-top:0.5rem;
+  font-size:0.85rem;
+  color:var(--color-error);
+
+}
+.form_button
+{
+  background-color:var(--color-primary);
+  border:1px solid #ffffff;
+  width:100%;
+  font-weight:bold;
+  border-radius:var(--border-radius);
+  font-size:1.1rem;
+  padding:1rem 2rem;
+  color:#ffffff;
+  cursor:pointer;
+}
+.form_button:hover
+{
+  background-color:var(--color-primary-dark);
+}
+.form_button:active
+{
+  transform:scale(0.98)
+}
+.form__text{
+  text-align:center;
+}
+.form__link
+{
+  text-decoration:none;
+  cursor: pointer;
+  color: var(--color-primary);
+  font-weight:500px;
+}
+.form--hidden
+{
+  display:none;
+}
